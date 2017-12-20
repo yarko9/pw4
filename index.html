@@ -5,20 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yaroslav Fedyna PW</title>
+
     <link rel="stylesheet" href="https://bootswatch.com/4/materia/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css">
+
 </head>
 
 <body>
-    <header>
+    <header id="home">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Yaroslav Fedyna</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link smooth" href="#home">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link smooth" href="#info">Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link smooth" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link smooth" href="#contactme">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         <p><a href="https://www.sendspace.com/"><b>DOWNLOAD MY FULL RESUME</b></a></p>
         <h1>Yaroslav Fedyna</h1>
         <h2>Front-end developer</h2>
-        <img src="img/avatar.png" width="400px" alt="My photo">
+        <img src="img/avatar.png" alt="Yaroslav Fedyna">
     </header>
     <main>
         <section id="info">
             <h2>ABOUT ME</h2>
+            <hr>
             <div id="carouselInfo" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselInfoPages" data-slide-to="0" class="active"></li>
@@ -54,7 +79,7 @@
             </div>
 
         </section>
-        <section class="myskills">
+        <section class="myskills" id="skills">
             <div class="container">
                 <h2>
                     SKILLS & LANGUAGES
@@ -88,7 +113,7 @@
             </div>
         </section>
 
-        <div class="contact">
+        <div class="contact" id="contactme">
             <section class="find">
                 <div class="grey">
                     <h2>HOW TO FIND ME ?</h2>
@@ -105,9 +130,9 @@
                     <h2>CONTACT ME:</h2>
                     <form id="contact-form">
                         <ul>
-                            <li>Enter your name: <input type="text" id="name" placeholder="Zinedine Zidane" required></li>
-                            <li>Enter your email: <input type="email" id="email" placeholder="Tomhanks@meta.ua" required></li>
-                            <li>Leave your feedback here:</li>
+                            <p>Enter your name: <input type="text" id="name" placeholder="Zinedine Zidane" required></p>
+                            <p>Enter your email: <input type="email" id="email" placeholder="Tomhanks@meta.ua" required></p>
+                            <p>Leave your feedback here:</p>
                             <textarea id="feedback" rows="3" cols="50"></textarea><br>
                             <input type="submit" id="button">
                         </ul>
@@ -124,17 +149,19 @@
         <!--</dialog>-->
         </article>
         </section>
-    <footer>
-        <h5>© 2017 Yaroslav Fedyna</h5><p id="resume"><a href="https://www.sendspace.com/"><b>DOWNLOAD MY FULL RESUME</b></a></p>
-        
-    </footer>
+        <footer>
+            <h5>© 2017 Yaroslav Fedyna</h5>
+            <p id="resume"><a href="https://www.sendspace.com/"><b>DOWNLOAD MY FULL RESUME</b></a></p>
+
+        </footer>
     </main>
-    
-    
+
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="js/feedback.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="js/feedback.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+
 </body>
 
 </html>
